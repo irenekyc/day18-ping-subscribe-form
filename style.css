@@ -1,0 +1,164 @@
+:root{
+    --main-color: hsl(223, 87%, 63%);
+    --main-light:hsl(223, 100%, 88%);
+    --secondary-color: hsl(354, 100%, 66%);
+    --main-gray: hsl(0, 0%, 59%);
+    --main-dark: hsl(209, 33%, 12%);
+    --main-font: 'Libre Franklin', sans-serif;
+}
+
+body{
+    background: white;
+    color: var(--main-gray);
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+strong{
+    font-weight: 600;
+    color: var(--main-dark);
+}
+
+a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+input{
+    border:none;
+    outline:none;
+    font-family: inherit;
+}
+img{
+    width:100%;
+}
+
+.section-coming-soon{
+    width:100%;
+    max-width:850px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 4rem 2rem;
+    text-align:center;
+}
+
+.logo{
+    width: 25%;
+    max-width:100px;
+    margin-bottom:1rem;
+}
+
+h1{
+    font-weight:300;
+    letter-spacing: 1px;
+    font-size:1.4rem;
+    margin-bottom:1rem;
+}
+p{
+    font-size:0.8rem;
+    line-height: 2;
+    margin-bottom:1rem;
+}
+.subscribe-div{
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+    padding:1rem 0;
+    margin-bottom:2rem;
+    
+}
+.email-field-div{
+    margin:0.5rem;
+    border:1px solid var(--main-color);
+    border-radius: 1.5rem;
+    height: 40px;
+    padding: 5px 15px;
+    width:100%;
+}
+
+.email-field{
+    height:100%;
+    width:100%;
+}
+
+.submit-btn{
+    height:40px;
+    background: var(--main-color);
+    color:white;
+    width:100%;
+    margin:0.5rem;
+    border-radius: 1.5rem;
+    font-size:0.8rem;
+
+}
+.submit-btn:hover{
+    filter:brightness(110%);
+}
+
+.social-media{
+    margin-top:3rem;
+    width:120px;
+    margin-right:auto;
+    margin-left:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2rem;
+}
+
+.social-media a{
+    height:30px;
+    width:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+}
+.social-media a:hover{
+    background: var(--main-color);
+    color:white;
+}
+
+@media (min-width:766px){
+    .subscribe-div{
+        display:flex;
+    }
+    .email-field{
+        width:60%
+    }
+    .submit-btn{
+        width:40%;
+        font-size:1rem;
+    }
+    h1{
+        font-size:2rem;
+    }
+    p{
+        font-size:1rem;
+    }
+}
+
+@media (min-width:1023px){
+    h1{
+        font-size:3rem;
+    }
+    p{
+        font-size:1rem;
+    }
+    .email-field-div{
+        height:50px;
+    }
+    .submit-btn{
+        height:50px;
+        
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

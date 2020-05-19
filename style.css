@@ -82,6 +82,24 @@ p{
     width:100%;
 }
 
+.error-m{
+    position:relative;
+    border:1px solid var(--secondary-color);
+}
+
+.error-m{
+    position:relative;
+}
+.error-m:after{
+    position:absolute;
+    content: attr(data-error);
+    color: var(--secondary-color);
+    font-size:0.5rem;
+    font-weight:700;
+    font-style: italic;
+    top:110%;
+    left:10px;
+}
 .email-field{
     height:100%;
     width:100%;

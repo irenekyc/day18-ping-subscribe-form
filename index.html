@@ -17,10 +17,10 @@
   <h1>We are launching <strong>soon!</strong></h1>
   <p>Subscribe and get notified</p>
   <form class="subscribe-div">
-    <div class="email-field-div">
-      <input class="email-field" id="email-field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    <div class="email-field-div" data-error="Please provide a valid emaill address">
+      <input class="email-field" id="email-field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your Email Address...">
     </div>
-    <input type="submit" class="submit-btn" value=" Notify Me">
+    <input type="submit" id="submit-btn" class="submit-btn" value=" Notify Me">
   </form>
   <img src="images/illustration-dashboard.png" alt="#">
   <div class="social-media">
@@ -44,5 +44,6 @@
       Coded by <a href="">Irene K</a>.
     </p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
